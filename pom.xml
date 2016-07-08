@@ -19,7 +19,9 @@
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>1.0</upstream.version>
-        <upstream.url>file:///home/sebastian/git/ag-grid-react-example/target/ag-grid-react-1.0.zip</upstream.url>
+        <!--<upstream.url>file:///home/sebastian/git/ag-grid-react-example/target/ag-grid-react-1.0.zip</upstream.url>-->
+        <upstream.url>target/ag-grid-react-1.0.zip</upstream.url>
+       
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
             {
@@ -80,10 +82,9 @@
                             <target>
                                 <echo message="Ant build properties:"/>
                                 <echo message="project.build.directory=${project.build.directory}"/>
-                                <echo message="destDir=${destDir}"/>
-
+                                <echo message="destDir=${destDir}"/>                            
                                 <echo message="download archive"/>
-                                <get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>
+                                <!--<get src="${upstream.url}" dest="${project.build.directory}/${project.artifactId}.zip"/>-->
                                 <echo message="unzip archive"/>
                                 <unzip src="${project.build.directory}/${project.artifactId}.zip" dest="${project.build.directory}"/>
                                 <echo message="moving resources"/>
