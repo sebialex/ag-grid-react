@@ -10,9 +10,9 @@
     
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
-    <artifactId>ag-grid-react</artifactId>
+    <artifactId>phenotips-table</artifactId>
     <version>1.0-SNAPSHOT</version>
-    <name>ag-grid-react</name>
+    <name>phenotips-table</name>
     <description>WebJar for WEBJAR_NAME</description>
     <url>http://webjars.org</url>
 
@@ -20,7 +20,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <upstream.version>1.0</upstream.version>
         <!--<upstream.url>file:///home/sebastian/git/ag-grid-react-example/target/ag-grid-react-1.0.zip</upstream.url>-->
-        <upstream.url>target/ag-grid-react-1.0.zip</upstream.url>
+        <upstream.url>target/phenotips-table.zip</upstream.url>
        
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${project.version}</destDir>
         <requirejs>
